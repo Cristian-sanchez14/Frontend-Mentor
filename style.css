@@ -1,0 +1,137 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+:root {
+  --clr-moderate-violet: #7541c8;
+  --clr-very-dark-grayish-blue: #48556a;
+  --clr-very-dark-blackish-blue: #19212e;
+  --clr-white: #ffffff;
+  --clr-light-gray: #cfcfcf;
+  --clr-light-grayish-blue: #ecf2f8;
+}
+
+
+ html {
+   font-size: 100%;
+ }
+ 
+ body {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  padding-top: 40px;
+  padding-bottom: 16px;
+}
+
+ .Grid {
+  max-width: 1400px;
+  padding: 104px;
+  margin-bottom: 21px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "purple purple grey white-tall" 
+    "purple purple grey white-tall" 
+    "white grey-long grey-long white-tall";
+
+  gap: 20px;
+  height: auto;
+  background-color: var(--clr-light-grayish-blue);
+ }
+
+.purple {
+  background-color: var(--clr-moderate-violet);
+  color: var(--clr-white);
+  grid-area: purple;
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 122px;
+  background-position-x: 80%;
+ }
+.purple .bottom {
+  padding-right: 40px;
+}
+
+.grey {
+  background-color: var(--clr-very-dark-grayish-blue);
+  color: var(--clr-white);
+  grid-area: grey;
+}
+.grey .bottom {
+  padding-right: 32px;
+}
+
+.white-small {
+  grid-area: white;
+  padding: 40px;
+}
+.white-small .middle {
+  color: var(--clr-very-dark-grayish-clue);
+}
+
+.grey-long {
+  background-color: var(--clr-very-dark-blackish-blue);
+  color: white;
+  grid-area: grey-long;
+}
+.grey-long .bottom {
+  padding-right: 40px;
+}
+
+.white-small, .white-tall {
+  background-color: var(--clr-white);
+  color: var(--clr-very-dark-blackish-blue);
+}
+.white-tall {
+  grid-area: white-tall;
+  padding: 28.8px;
+}
+
+.top {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.top h2 {
+  font-size: 12px;
+}
+.top p {
+  color: var(--clr-light-gray);
+}
+.middles {
+  margin-bottom: 16px;
+  font-size: 22px;
+  font-weight: 500;
+}
+.bottom {
+  color: #9c9c9c;
+  line-height: 1.5;
+}
+
+.purple, .white-small, .white-tall, .grey, .grey-long {
+  padding: 32px;
+  border-radius: 5px;
+}
+.purple img, .white-small img, .white-tall img, .grey img, .grey-long img {
+  border-radius: 8px;
+  width: 70%;
+}
+
+@media screen and (max-width: 991px) {
+  .Grid {
+    grid-template-columns: minmax(400px, 1fr);
+    grid-template-areas: "purple" "grey" "white" "grey-long" "white-tall";
+  }
+  .Grid .middle {
+    font-size: 1.2rem;
+  }
+}
