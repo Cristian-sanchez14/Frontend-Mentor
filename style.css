@@ -135,3 +135,14 @@
     font-size: 1.2rem;
   }
 }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.attribution a {
+  color: (228, 45%, 44%);
+  
+}
