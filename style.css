@@ -27,6 +27,12 @@
   padding-bottom: 16px;
 }
 
+p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding-top: 5px;
+}
+
  .Grid {
   max-width: 1400px;
   padding: 104px;
@@ -132,7 +138,7 @@
     grid-template-areas: "purple" "grey" "white" "grey-long" "white-tall";
   }
   .Grid .middle {
-    font-size: 1.2rem;
+    font-size: 19px;
   }
 }
 
