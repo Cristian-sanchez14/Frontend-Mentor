@@ -23,20 +23,20 @@
  body {
   font-size: 13px;
   font-family: "Barlow Semi Condensed", sans-serif;
-  padding-top: 40px;
-  padding-bottom: 16px;
+  padding-top: 2.5em;
+  padding-bottom: 1em;
 }
 
 p {
   margin-bottom: 20px;
   font-size: 20px;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
  .Grid {
   max-width: 1400px;
-  padding: 104px;
-  margin-bottom: 21px;
+  padding: 6.5em;
+  margin-bottom: 1.3em;
   margin-left: auto;
   margin-right: auto;
   display: grid;
@@ -63,7 +63,7 @@ p {
   background-position-x: 80%;
  }
 .purple .bottom {
-  padding-right: 40px;
+  padding-right: 2.5em;
 }
 
 .grey {
@@ -72,12 +72,12 @@ p {
   grid-area: grey;
 }
 .grey .bottom {
-  padding-right: 32px;
+  padding-right: 2em;
 }
 
 .white-small {
   grid-area: white;
-  padding: 40px;
+  padding: 3em;
 }
 .white-small .middle {
   color: var(--clr-very-dark-grayish-clue);
@@ -89,7 +89,7 @@ p {
   grid-area: grey-long;
 }
 .grey-long .bottom {
-  padding-right: 40px;
+  padding-right: 2.5em;
 }
 
 .white-small, .white-tall {
@@ -98,14 +98,14 @@ p {
 }
 .white-tall {
   grid-area: white-tall;
-  padding: 28.8px;
+  padding: 2em;
 }
 
 .top {
   display: flex;
   gap: 30px;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 1em;
 }
 .top h2 {
   font-size: 12px;
@@ -124,7 +124,7 @@ p {
 }
 
 .purple, .white-small, .white-tall, .grey, .grey-long {
-  padding: 32px;
+  padding: 2em;
   border-radius: 5px;
 }
 .purple img, .white-small img, .white-tall img, .grey img, .grey-long img {
@@ -138,7 +138,7 @@ p {
     grid-template-areas: "purple" "grey" "white" "grey-long" "white-tall";
   }
   .Grid .middle {
-    font-size: 19px;
+    font-size: 1.2em;
   }
 }
 
